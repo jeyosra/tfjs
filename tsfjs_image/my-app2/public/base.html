@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PA pirate Boat Detection</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+       
+</head>
+
+<body>
+
+<header itemscope="itemscope" class="header" style="min-height: 76px;">
+
+        <div role="banner" class="navbar navbar-inverse bs-docs-nav" id="main-nav" style="min-height: 76px;">
+
+
+                        <div class="navbar-header responsive-logo">
+
+                                <a class="navbar-brand" href="https://fr.primeanalytics.fr/"><img alt="Prime Analytics" src="https://static.wixstatic.com/media/8b1bf9_839423ebee004da8bf3f7aa7fd06697f~mv2.png/v1/fill/w_244,h_48,al_c,q_85,usm_0.66_1.00_0.01/8b1bf9_839423ebee004da8bf3f7aa7fd06697f~mv2.webp""></a>
+                        </div>
+
+                        <nav itemtype="http://schema.org/SiteNavigationElement" itemscope="" id="site-navigation" class="navbar-collapse bs-navbar-collapse collapse">
+                                                <div class="buttons" style="margin-top: 0px;">
+                                                        <a href="/app/kibana#/dashboard/89d00da0-f799-11e7-94d1-492b41a84330" class="btn btn-primary custom-button">Dashboard</a>
+                                                        <a href="/logout" class="btn btn-primary custom-button">Logout</a>
+                                                </div>
+                        </nav>
+
+
+        </div>
+        
+</header>
+
+    <!--nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PA pirate Boat Detection</a>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Help</button>
+        </div>
+    </nav -->
+    <div class="container">
+        <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
+    </div>
+</body>
+
+</html>
